@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * Laravel-admin - admin builder based on Laravel.
+ * @author z-song <https://github.com/z-song>
+ *
+ * Bootstraper for Admin.
+ *
+ * Here you can remove builtin form field:
+ * Encore\Admin\Form::forget(['map', 'editor']);
+ *
+ * Or extend custom form field:
+ * Encore\Admin\Form::extend('php', PHPEditor::class);
+ *
+ * Or require js and css assets:
+ * Admin::css('/packages/prettydocs/css/styles.css');
+ * Admin::js('/packages/prettydocs/js/main.js');
+ *
+ */
+
+Encore\Admin\Form::forget(['map', 'editor']);
+
+use Encore\Admin\Form;
+use App\Admin\Extensions\Form\CKEditor;
+use App\Admin\Extensions\Form\CKEditorText;
+
+$script = <<<JS
+$( document ).ready(function() {
+    $('input').attr('autocomplete','off');
+
+    $('.modal').on('hidden.bs.modal', function (e) {
+        $('iframe').each(function (e) {
+            var src = $(this).attr('src');
+            $(this).attr('src', src);
+        });
+    });
+});
+JS;
+
+$style = <<<CSS
+.modal.grid-modal.fade img {
+    max-width: 100%;
+    max-height: 100%;
+}
+CSS;
+
+Admin::script($script);
+Admin::style($style);
+
+Form::extend('ckeditor', CKEditor::class);
+Form::extend('ckeditorText', CKEditorText::class);
