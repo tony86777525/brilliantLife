@@ -97,5 +97,4 @@ class SectionSlider extends Model implements Sortable
     {
         return $this->belongsTo(Section::class, 'section_id');
     }
-
 }

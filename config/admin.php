@@ -146,7 +146,7 @@ return [
     | Laravel-admin upload setting
     |--------------------------------------------------------------------------
     |
-    | File system configuration for form upload files and images, including
+    | File system configuration for form upload files and img, including
     | disk and upload path.
     |
     */
@@ -157,7 +157,7 @@ return [
 
         // Image and file upload path under the disk above.
         'directory' => [
-            'image' => 'images',
+            'image' => 'img',
             'file'  => 'files',
         ],
     ],

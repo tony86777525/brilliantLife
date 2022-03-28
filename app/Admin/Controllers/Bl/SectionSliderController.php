@@ -2,7 +2,8 @@
 
 namespace App\Admin\Controllers\Bl;
 
-use App\Admin\Extensions\Form\SelectSection;
+use App\Admin\Extensions\Tools\Buttons;
+use App\Admin\Extensions\Tools\ExcelAdd;
 use App\Models\Section;
 use App\Models\SectionSlider;
 use Encore\Admin\Controllers\AdminController;
@@ -10,7 +11,7 @@ use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
 use Encore\Admin\Widgets\Table;
-use Encore\Admin\Admin;
+
 
 class SectionSliderController extends AdminController
 {
@@ -64,6 +65,11 @@ class SectionSliderController extends AdminController
 
         $grid->actions(function($actions){
             $actions->disableView();
+        });
+
+        $sections = Section::all()->pluck('title', 'id');
+        $grid->tools(function (Grid\Tools $tools) use ($sections) {
+            $tools->prepend(new Buttons($sections));
         });
 
 //        $grid->disableActions();

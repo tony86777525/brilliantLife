@@ -63,4 +63,9 @@ class Section extends Model
 
     // default value
     protected $attributes = [];
+
+    public function sectionSliders()
+    {
+        return $this->hasMany(SectionSlider::class)->where('display', '=', self::DISPLAY_ON)->orderBy('order');
+    }
 }
