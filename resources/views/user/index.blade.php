@@ -22,8 +22,8 @@
             <div class="wrapper">
                 <div class="wrap">
                     <div class="anime anime--top wow fadeIn" data-wow-delay="1.2s">
-                        <div class="anime__figure clearfix">
-                            <img src="{{ asset("assets/img/user/figure.gif") }}" alt="">
+                        <div class="anime__figure clearfix wow shakeY" data-wow-duration="15s" data-wow-iteration="infinite">
+                            <img class="" src="{{ asset("assets/img/user/figure.gif") }}" alt="">
                         </div>
                     </div>
                     <div class="mainTxt">
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="anime anime--bottom wow fadeIn" data-wow-delay="1.2s">
-                        <div class="anime__figure clearfix">
+                        <div class="anime__figure clearfix wow shakeY" data-wow-duration="15s">
                             <img src="{{ asset("assets/img/user/figure.gif") }}" alt="">
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                             <li><h5 class="h5">留美建築大師</h5><span>呂文程 建築師</span></li>
                             <li><h5 class="h5">藝術景觀大師</h5><span>綠點設計 施仁人 執行總監</span></li>
                             <li><h5 class="h5">耐震結構權威</h5><span>豐立工程顧問 楊永豐 資深技師</span></li>
-                            <li><h5 class="h5">金獎空間名師</h5><span>綵韻室內設計</span></li>
+                            <li><h5 class="h5">金獎空間名師</h5><span>綵韻室內設計 吳金鳳 藝術總監</span></li>
                         </ul>
                     </div>
                 </div>
