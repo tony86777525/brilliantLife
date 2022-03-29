@@ -55,7 +55,7 @@
                     <div class="mainText wow fadeInLeft">
                         <h3 class="h3"><span>桃園市心</span></h3>
                         <h4 class="h4"><span>四大特區 潛力同享</span></h4>
-                        <p class="article">【定泰翫花同】坐享市府例行商圈豐富機能，周邊環繞站前商圈、中路重劃區、藝文特區及小檜溪重劃區，當各區增值潛力蓬勃發展，位居核心的【定泰翫花同】同步共享未來碩果。</p>
+                        <p class="article">【定泰翫花同】坐享市府力行商圈豐富機能，周邊環繞站前商圈、中路重劃區、藝文特區及小檜溪重劃區，當各區增值潛力蓬勃發展，位居核心的【定泰翫花同】同步共享未來碩果。</p>
                     </div>
                 </div>
                 <div class="flexGroup__item flexGroup__item--media">
@@ -167,7 +167,10 @@
                 <div class="flexGroup__item flexGroup__item--media">
                     <div class="carousel">
                         <div class="slides">
-                            <div class="slides__item"><img class="image" src="{{ asset("assets/img/user/img-05-01.png") }}" alt="定泰建設 連續9年 榮獲台灣誠信建商"></div>
+                            @php $section = $sections->shift() ?? collect() @endphp
+                            @foreach($section->sectionSliders as $sectionSlider)
+                                <div class="slides__item"><img class="image" src="{{ $mainPresenter->getSectionSliderImage($sectionSlider->image) }}" alt="{{$sectionSlider->alt }}"></div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -226,14 +229,6 @@
                             @foreach($section->sectionSliders as $sectionSlider)
                                 <div class="slides__item"><img class="image" src="{{ $mainPresenter->getSectionSliderImage($sectionSlider->image) }}" alt="{{$sectionSlider->alt }}"></div>
                             @endforeach
-                            <div class="slides__item"><img class="image" src="{{ asset("assets/img/user/img-07-01.png") }}" alt="樣品屋實景"></div>
-                            <div class="slides__item"><img class="image" src="{{ asset("assets/img/user/img-07-02.png") }}" alt="樣品屋實景"></div>
-                            <div class="slides__item"><img class="image" src="{{ asset("assets/img/user/img-07-03.png") }}" alt="樣品屋實景"></div>
-                            <div class="slides__item"><img class="image" src="{{ asset("assets/img/user/img-07-04.png") }}" alt="樣品屋實景"></div>
-                            <div class="slides__item"><img class="image" src="{{ asset("assets/img/user/img-07-09.jpg") }}" alt="A5/3-8F傢俱配置參考圖"></div>
-                            <div class="slides__item"><img class="image" src="{{ asset("assets/img/user/img-07-10.jpg") }}" alt="A3/3-8F傢俱配置參考圖"></div>
-                            <div class="slides__item"><img class="image" src="{{ asset("assets/img/user/img-07-11.jpg") }}" alt="A2/3-8F傢俱配置參考圖"></div>
-                            <div class="slides__item"><img class="image" src="{{ asset("assets/img/user/img-07-12.jpg") }}" alt="A1/3-8F傢俱配置參考圖"></div>
                         </div>
                     </div>
                 </div>

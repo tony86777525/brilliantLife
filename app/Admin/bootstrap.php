@@ -20,10 +20,6 @@
 
 Encore\Admin\Form::forget(['map', 'editor']);
 
-use Encore\Admin\Form;
-use App\Admin\Extensions\Form\CKEditor;
-use App\Admin\Extensions\Form\CKEditorText;
-
 $script = <<<JS
 $( document ).ready(function() {
     $('input').attr('autocomplete','off');
@@ -47,5 +43,3 @@ CSS;
 Admin::script($script);
 Admin::style($style);
 
-Form::extend('ckeditor', CKEditor::class);
-Form::extend('ckeditorText', CKEditorText::class);
