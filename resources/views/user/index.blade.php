@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="anime anime--bottom wow fadeIn" data-wow-delay="1.2s">
-                        <div class="anime__figure clearfix wow shakeY" data-wow-duration="15s">
+                        <div class="anime__figure clearfix wow shakeY" data-wow-duration="15s" data-wow-iteration="infinite">
                             <img src="{{ asset("assets/img/user/figure.gif") }}" alt="">
                         </div>
                     </div>
