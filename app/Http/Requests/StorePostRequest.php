@@ -28,7 +28,7 @@ class StorePostRequest extends FormRequest
             'gender' => 'required|integer|max:1',
             'phone' => 'required|regex:/^[0-9]{10}/|max:10',
             'content' => 'required|max:1000',
-            'captcha' => 'required|captcha|size:4',
+            'captcha' => 'required|captcha',
         ];
     }
 
@@ -44,7 +44,6 @@ class StorePostRequest extends FormRequest
             'max' => '此欄位最多 :max 個字',
             'integer' => '此欄位只能填寫數字',
             'captcha' => '驗證碼錯誤, 請重新輸入',
-            'size' => '請填寫正確格式',
             'phone.regex' => '請填寫正確的手機號碼',
         ];
     }
