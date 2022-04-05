@@ -41,7 +41,7 @@ class Buttons extends AbstractTool
         $html = '<div class="mb-2">';
 
         foreach ($this->sections as $sectionId => $sectionTitle) {
-            $url = route('admin.sliders.index') . "?&section%5Bid%5D={$sectionId}";
+            $url = route('admin.user.sliders.index') . "?&section%5Bid%5D={$sectionId}";
             $className = 'bg-white text-purple';
 
             if ($nowSectionId == $sectionId) $className = 'bg-purple';

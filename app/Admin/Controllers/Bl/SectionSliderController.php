@@ -62,18 +62,18 @@ class SectionSliderController extends AdminController
             ]);
         });
 
-        $grid->actions(function($actions){
-            $actions->disableView();
-        });
+//        $grid->actions(function($actions){
+//            $actions->disableView();
+//        });
 
-        $sections = Section::all()->pluck('title', 'id');
-        $grid->tools(function (Grid\Tools $tools) use ($sections) {
-            $tools->prepend(new Buttons($sections));
-        });
+//        $sections = Section::all()->pluck('title', 'id');
+//        $grid->tools(function (Grid\Tools $tools) use ($sections) {
+//            $tools->prepend(new Buttons($sections));
+//        });
 
 //        $grid->disableActions();
         $grid->disableBatchActions();
-//        $grid->disableCreateButton();
+        $grid->disableCreateButton();
         $grid->disableExport();
         $grid->disableColumnSelector();
         $grid->disablePagination();

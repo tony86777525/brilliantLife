@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="{{ asset('assets/common/slick-1.8.1/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/common/slick-1.8.1/slick-theme.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/common/WOW-master/css/libs/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/common/sweetalert2-master/package/dist/sweetalert2.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/user/index.css') }}">
 @endsection
 
@@ -13,6 +14,7 @@
     <script src="{{ asset('assets/common/vendor/jquery-2.1.0.min.js') }}"></script>
     <script src="{{ asset('assets/common/slick-1.8.1/slick.min.js') }}"></script>
     <script src="{{ asset('assets/common/WOW-master/dist/wow.min.js') }}"></script>
+    <script src="{{ asset('assets/common/sweetalert2-master/package/dist/sweetalert2.all.min.js') }}"></script>
     <script src="{{ asset('assets/js/user/index.js') }}"></script>
 @endsection
 
@@ -235,5 +237,11 @@
             </div>
         </div>
         <!-- 超值坪效 end -->
+        @include('user._part.post.form')
+
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.9321263725615!2d121.2988807150056!3d25.002422183987164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681f8c481a82ab%3A0xad15503ca821154c!2z5a6a5rOw57-r6Iqx5ZCMIOaOpeW-heS4reW_gw!5e0!3m2!1szh-TW!2stw!4v1648797447989!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
 @endsection

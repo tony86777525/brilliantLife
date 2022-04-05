@@ -31,9 +31,9 @@ class SectionController extends AdminController
 //        $grid->column('created_at', __('Created at'));
 //        $grid->column('updated_at', __('Updated at'));
 
-        $grid->disableActions();
+//        $grid->disableActions();
         $grid->disableBatchActions();
-        $grid->disableCreateButton();
+//        $grid->disableCreateButton();
         $grid->disableExport();
         $grid->disableColumnSelector();
         $grid->disablePagination();

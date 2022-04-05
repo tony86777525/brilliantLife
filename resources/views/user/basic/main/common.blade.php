@@ -18,6 +18,7 @@
     <meta property="og:locale" content="zh_TW" />
     <meta property="og:description" content="">
     <meta property="fb:admins" content="" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('css')
 </head>
 
