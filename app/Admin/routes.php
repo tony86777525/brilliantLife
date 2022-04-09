@@ -17,7 +17,7 @@ Route::group([
 
     Route::group([
         'namespace'     => 'Bl',
-        'middleware'    => 'admin.permission:administrator',
+        'middleware'    => 'admin.permission:allow,administrator',
     ], function (Router $router) {
         $router->resource('sections', SectionController::class);
         $router->resource('section/sliders', SectionSliderController::class);
