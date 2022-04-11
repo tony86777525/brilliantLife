@@ -25,14 +25,14 @@
                 <div class="wrap">
                     <div class="anime anime--top wow fadeIn" data-wow-delay="1.2s">
                         <div class="anime__figure clearfix wow shakeY" data-wow-duration="15s" data-wow-iteration="infinite">
-                            <img class="" src="{{ asset("assets/img/user/figure.gif") }}" alt="">
+                            <img src="assets/images/figure.gif" alt="">
                         </div>
                     </div>
                     <div class="mainTxt">
                         <div class="wow fadeIn" data-wow-delay="1.2s">
                             <div class="slogan slogan--top wow pulse" data-wow-delay="1.5s" data-wow-iteration="infinite"><span>捷運綠線G9站約500米</span></div>
                         </div>
-                        <h1 class="logo wow fadeInDown"><img class="image" src="{{ asset("assets/img/user/img-logo.png") }}" alt="定泰翫花同 BRILLIANT LIFE"></h1>
+                        <h1 class="logo wow fadeInDown"><img class="image" src="assets/images/img-logo.png" alt="定泰翫花同 BRILLIANT LIFE"></h1>
                         <div class="txt">
                             <h2 class="txt__des wow fadeInDown" data-wow-delay="0.3s"><span>市心精品捷運宅</span></h2>
                             <div class="txt__feature wow fadeInDown" data-wow-delay="0.6s">邊間、雙面採光 17-24坪</div>
@@ -44,7 +44,7 @@
                     </div>
                     <div class="anime anime--bottom wow fadeIn" data-wow-delay="1.2s">
                         <div class="anime__figure clearfix wow shakeY" data-wow-duration="15s" data-wow-iteration="infinite">
-                            <img src="{{ asset("assets/img/user/figure.gif") }}" alt="">
+                            <img src="assets/images/figure.gif" alt="">
                         </div>
                     </div>
                 </div>
@@ -236,6 +236,7 @@
                 </div>
             </div>
         </div>
+
         <!-- 超值坪效 end -->
         @include('user._part.post.form')
 

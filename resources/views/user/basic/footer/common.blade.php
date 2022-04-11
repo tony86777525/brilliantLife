@@ -11,7 +11,7 @@
             </div>
             <div class="contact__group">
                 <div class="title">服務專線</div>
-                <div class="content"><a href="tel:033328188">03 332 8188</a></div>
+                <div class="content"><a href="tel:033321188">03 332 1188</a></div>
             </div>
             <div class="contact__group">
                 <div class="title">接待中心</div>
