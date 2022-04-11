@@ -35,9 +35,10 @@ template {
 
 /*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
 html {
-  font-family: sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  line-height: 1.34;
 }
 
 body {
@@ -5122,7 +5123,7 @@ h3, .h3 {
     font-size: 2.5rem;
   }
 }
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1681px) {
   h3, .h3 {
     font-size: 3.875rem;
   }
@@ -5136,7 +5137,7 @@ h4, .h4 {
     font-size: 2rem;
   }
 }
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1681px) {
   h4, .h4 {
     font-size: 3.125rem;
   }
@@ -5443,7 +5444,7 @@ h6, .h6 {
     font-size: 98px;
   }
 }
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1681px) {
   .section--intro .wrap .mainTxt {
     position: relative;
     top: -5%;
@@ -5500,6 +5501,9 @@ h6, .h6 {
     padding: 20px 25px;
   }
 }
+.section--content .wrapper {
+  margin: 0 auto;
+}
 .section--form {
   padding: 20px 10px;
   background-color: #F1F2EC;
@@ -5515,7 +5519,7 @@ h6, .h6 {
   }
 }
 .section--form .wrapper {
-  max-width: 900px;
+  max-width: 600px;
   margin: 0 auto;
 }
 .section--form .section__title {
@@ -5533,7 +5537,7 @@ h6, .h6 {
 }
 @media only screen and (min-width: 768px) {
   .section--form .section__title:before, .section--form .section__title:after {
-    height: 54px;
+    height: 36px;
   }
 }
 .section--form .section__title > span {
@@ -5541,13 +5545,13 @@ h6, .h6 {
   display: inline-block;
   vertical-align: middle;
   padding: 0 18px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 @media only screen and (min-width: 768px) {
   .section--form .section__title > span {
     padding: 0 24px;
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 .section .flexGroup {
@@ -5655,8 +5659,8 @@ h6, .h6 {
   }
   .section .flexGroup__item--text {
     padding-top: 70px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 70px;
+    padding-right: 70px;
     width: 38.0213903743%;
   }
   .section .flexGroup__item--text .h3 {
@@ -5668,6 +5672,10 @@ h6, .h6 {
   .section .flexGroup__item--text .h4.vertical > span {
     display: block;
   }
+  .section .flexGroup__item--text .article {
+    font-size: 20px;
+    line-height: 1.5em;
+  }
   .section .flexGroup__item--media {
     width: 61.9786096257%;
   }
@@ -5675,10 +5683,10 @@ h6, .h6 {
     padding-left: 35px;
   }
 }
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1681px) {
   .section .flexGroup__item--text {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
   .section .flexGroup__item--text .h3 {
     margin-bottom: 80px;
@@ -5687,8 +5695,8 @@ h6, .h6 {
     margin-bottom: 50px;
   }
   .section .flexGroup__item--text .article {
-    font-size: 32px;
-    letter-spacing: 1.4375;
+    font-size: 20px;
+    line-height: 1.5em;
   }
 }
 
@@ -5712,7 +5720,7 @@ h6, .h6 {
 }
 @media only screen and (min-width: 768px) {
   .form .row__title {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .form .row__col {
@@ -5723,10 +5731,6 @@ h6, .h6 {
   display: table;
   clear: both;
 }
-.form .row__col .form-error {
-    color: #de5167;
-    font-weight: bold;
-}
 .form .row__col .fancySelect,
 .form .row__col .fancyInput,
 .form .row__col .fancyTextarea {
@@ -5735,7 +5739,7 @@ h6, .h6 {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  padding: 8px 5px;
+  padding: 6px 5px;
   border: 5px solid #914897;
   border-radius: 30px;
   font-size: 16px;
@@ -5753,7 +5757,6 @@ h6, .h6 {
 .form .row__col .fancyInput,
 .form .row__col .fancyTextarea {
     padding: 12px 5px;
-    font-size: 22px;
   }
 }
 .form .row__col .fancySelect--full,
@@ -5853,7 +5856,7 @@ h6, .h6 {
 }
 @media only screen and (min-width: 768px) {
   .form .row__col .btn {
-    padding: 21px 5px;
+    padding: 16px 5px;
   }
 }
 .form .row__col .btn__text {
@@ -5863,7 +5866,7 @@ h6, .h6 {
 }
 @media only screen and (min-width: 768px) {
   .form .row__col .btn__text {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .form .row__col .btn--clear {
@@ -5972,19 +5975,17 @@ h6, .h6 {
 
 .tools {
   position: fixed;
-  right: 10px;
-  bottom: 100px;
+  left: 30px;
+  top: 10px;
   z-index: 100;
 }
 .tools__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #dd5166;
-  padding: 20px;
+  background-color: #f27474;
+  padding: 10px;
   border-radius: 50%;
-  -webkit-box-shadow: 0 7px 0 #cccccc;
-          box-shadow: 0 7px 0 #cccccc;
 }
 .tools__list > li {
   cursor: pointer;
@@ -5993,11 +5994,8 @@ h6, .h6 {
 .tools__list > li a {
   display: block;
 }
-.tools__list .tool {
-  display: none;
-}
 .tools__list.active {
-  border-radius: 70px;
+  border-radius: 40px;
 }
 .tools__list.active > li {
   border-bottom: 3px solid #fff;
@@ -6018,55 +6016,23 @@ h6, .h6 {
 
 .icon {
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 20px;
+  height: 20px;
   background-image: url("/assets/img/user/icon-tools.png");
-  background-size: 35px 210px;
-}
-@media only screen and (min-width: 768px) {
-  .icon {
-    width: 71px;
-    height: 71px;
-    background-size: 71px 426px;
-  }
+  background-size: 20px 120px;
 }
 .icon--switch {
-  background-position: 0 -35px;
-}
-@media only screen and (min-width: 768px) {
-  .icon--switch {
-    background-position: 0 -71px;
-  }
+  background-position: 0 -20px;
 }
 .icon--mail {
-  background-position: 0 -70px;
-}
-@media only screen and (min-width: 768px) {
-  .icon--mail {
-    background-position: 0 -142px;
-  }
+  background-position: 0 -40px;
 }
 .icon--tel {
-  background-position: 0 -105px;
-}
-@media only screen and (min-width: 768px) {
-  .icon--tel {
-    background-position: 0 -213px;
-  }
+  background-position: 0 -60px;
 }
 .icon--pin {
-  background-position: 0 -140px;
-}
-@media only screen and (min-width: 768px) {
-  .icon--pin {
-    background-position: 0 -284px;
-  }
+  background-position: 0 -80px;
 }
 .icon--fb {
-  background-position: 0 -175px;
-}
-@media only screen and (min-width: 768px) {
-  .icon--fb {
-    background-position: 0 -355px;
-  }
+  background-position: 0 -100px;
 }
