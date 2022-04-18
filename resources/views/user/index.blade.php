@@ -65,7 +65,7 @@
                         <div class="slides" data-slick-slider="media">
                             @php $section = $sections->shift() ?? collect() @endphp
                             @foreach($section->sectionSliders as $sectionSlider)
-                            <div class="slides__item"><img class="image" src="{{ $mainPresenter->getSectionSliderImage($sectionSlider->image) }}" alt="{{$sectionSlider->alt }}"></div>
+                                <div class="slides__item"><img class="image" src="{{ $mainPresenter->getSectionSliderImage($sectionSlider->image) }}" alt="{{$sectionSlider->alt }}"></div>
                             @endforeach
                         </div>
                     </div>
@@ -212,7 +212,7 @@
         </div>
         <!-- 專利精工 end -->
         <!-- 超值坪效 start -->
-         <div id="content-07" class="section section--content">
+        <div id="content-07" class="section section--content">
             <div class="wrapper flexGroup">
                 <div class="flexGroup__item flexGroup__item--text">
                     <div class="mainText wow fadeInLeft">
@@ -236,7 +236,6 @@
                 </div>
             </div>
         </div>
-
         <!-- 超值坪效 end -->
         @include('user._part.post.form')
 
