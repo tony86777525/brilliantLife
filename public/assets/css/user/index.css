@@ -5203,17 +5203,9 @@ h6, .h6 {
   left: 0;
   bottom: 0;
   display: block;
-  width: 55%;
-  padding-top: 34.8%;
   background-image: url("/assets/img/user/deco-lb.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
-@media only screen and (min-width: 1024px) {
-  .section:before {
-    width: 20.8333333333%;
-    padding-top: 13.1770833333%;
-  }
 }
 .section--intro {
   overflow: hidden;
@@ -5221,6 +5213,16 @@ h6, .h6 {
   height: 82vh;
   background-color: #8E80BB;
   padding: 20px;
+}
+.section--intro:before {
+  width: 55%;
+  padding-top: 34.8%;
+}
+@media only screen and (min-width: 1024px) {
+  .section--intro:before {
+    width: 20.8333333333%;
+    padding-top: 13.1770833333%;
+  }
 }
 @media only screen and (min-width: 768px) {
   .section--intro {
@@ -5518,6 +5520,16 @@ h6, .h6 {
 .section--content {
   padding: 15vh 5%;
   background-color: #F1F2EC;
+}
+.section--content:before {
+  width: 44%;
+  padding-top: 27.8%;
+}
+@media only screen and (min-width: 1024px) {
+  .section--content:before {
+    width: 20.8333333333%;
+    padding-top: 13.1770833333%;
+  }
 }
 @media only screen and (min-width: 768px) {
   .section--content {
